@@ -129,6 +129,8 @@ struct GeneralSettingView: View {
             }
             Section(L10n.Localizable.GeneralSettingView.Section.Title.security) {
                 HStack {
+                    Text(L10n.Localizable.GeneralSettingView.Title.autoLock)
+                    Spacer()
                     Picker(
                         L10n.Localizable.GeneralSettingView.Title.autoLock,
                         selection: $autoLockPolicy
